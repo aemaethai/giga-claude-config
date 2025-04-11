@@ -1,1 +1,1 @@
-# giga-claude-mcp
+# giga-claude-config
