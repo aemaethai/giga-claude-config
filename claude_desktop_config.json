@@ -47,6 +47,20 @@
         "OKTA_ORG_URL": "{{https://hostname.okta.com}}",
         "OKTA_API_TOKEN": "{{okta-apikey}}"
       }
+    },
+    "google": {
+      "command": "docker",
+      "args": [
+        "run",
+        "-i",
+        "--rm",
+        "-e",
+        "GOOGLE_TOKEN_JSON",
+        "google-admin-mcp"
+      ],
+      "env": {
+        "GOOGLE_TOKEN_JSON": "google-admin-token"
+      }
     }
   }
 }
