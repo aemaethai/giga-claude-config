@@ -59,7 +59,7 @@
         "google-admin-mcp"
       ],
       "env": {
-        "GOOGLE_TOKEN_JSON": "google-admin-token"
+        "GOOGLE_TOKEN_JSON": "{{google-admin-token}}"
       }
     }
   }
