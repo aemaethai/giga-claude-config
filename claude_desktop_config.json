@@ -27,8 +27,8 @@
         "mcp/slack"
       ],
       "env": {
-        "SLACK_BOT_TOKEN": "{{xoxb-apikey}}",
-        "SLACK_TEAM_ID": "{{T01234567}}"
+        "SLACK_BOT_TOKEN": "{{slack-bot-token-xoxb}}",
+        "SLACK_TEAM_ID": "{{slack-team-id-T01234567}}"
       }
     },
     "okta": {
@@ -59,7 +59,27 @@
         "google-admin-mcp"
       ],
       "env": {
-        "GOOGLE_TOKEN_JSON": "{{google-admin-token}}"
+        "GOOGLE_TOKEN_JSON": "{{google-apikey}}"
+      }
+    },
+    "vanta": {
+      "command": "docker",
+      "args": [
+        "run",
+        "-i",
+        "--rm",
+        "-e",
+        "VANTA_CLIENT_ID",
+        "-e",
+        "VANTA_CLIENT_SECRET",
+        "-e",
+        "VANTA_API_URL",
+        "vanta-mcp"
+      ],
+      "env": {
+        "VANTA_CLIENT_ID": "{{vanta-apikey-vci}}",
+        "VANTA_CLIENT_SECRET": "{{vanta-apikey-vcs}}",
+        "VANTA_API_URL": "https://api.vanta.com"
       }
     }
   }
